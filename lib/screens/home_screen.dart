@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_week_1/blocs/slides_bloc.dart';
 import 'package:flutter_week_1/constants.dart';
 import 'package:flutter_week_1/widgets/default_screen.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   static final String routeName = '/';
@@ -8,6 +10,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultScreen(
+      onTap: () =>
+          Provider.of<SlidesBloc>(context, listen: false).nextSlide(context),
       child: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
