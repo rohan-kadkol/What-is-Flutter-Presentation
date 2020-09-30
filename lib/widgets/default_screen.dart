@@ -12,10 +12,12 @@ class DefaultScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             TopBar(),
             Expanded(
               child: Container(
+                color: Colors.white,
                 child: child,
               ),
             )
