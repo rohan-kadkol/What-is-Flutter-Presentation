@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_week_1/screens/home_screen.dart';
+import 'package:flutter_week_1/screens/home_screen/home_screen.dart';
+import 'package:flutter_week_1/screens/what_is_flutter_screen/what_is_flutter_screen.dart';
 
 class SlidesBloc extends ChangeNotifier {
-  List<String> slides = [HomeScreen.routeName];
+  List<String> slides = [HomeScreen.routeName, WhatIsFlutterScreen.routeName];
 
   int currentSlide = 0;
 
@@ -22,5 +23,9 @@ class SlidesBloc extends ChangeNotifier {
 
     currentSlide--;
     Navigator.pushNamed(context, slides[currentSlide], arguments: arguments);
+  }
+
+  bool canPreviousSlide() {
+    return currentSlide > 0;
   }
 }

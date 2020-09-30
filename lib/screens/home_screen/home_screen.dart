@@ -4,6 +4,8 @@ import 'package:flutter_week_1/constants.dart';
 import 'package:flutter_week_1/widgets/default_screen.dart';
 import 'package:provider/provider.dart';
 
+import '../../widgets/custom_flutter_logo.dart';
+
 class HomeScreen extends StatelessWidget {
   static final String routeName = '/';
 
@@ -16,11 +18,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(
-              image: AssetImage('assets/images/flutter.png'),
-              height: 300.0,
-              width: 300.0,
-            ),
+            CustomFlutterLogo(),
             const SizedBox(height: kDefaultMargin * 3),
             Text(
               "Beginners' guide to Flutter Development",
