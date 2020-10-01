@@ -11,7 +11,8 @@ class WhatIsFlutterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultScreen(
-      onTap: () => Provider.of<SlidesBloc>(context, listen: false).nextSlide(context),
+      onTap: () =>
+          Provider.of<SlidesBloc>(context, listen: false).nextSlide(context),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -33,6 +33,7 @@ dependencies:
     path: packages/isa_app
   dog_breeds_app:
     path: packages/dog_breeds_app
+  after_layout: ^1.0.7+2
 
 dev_dependencies:
   flutter_test:

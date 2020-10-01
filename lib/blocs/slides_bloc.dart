@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_week_1/screens/dog_breeds_app_screen/dog_breeds_app_screen.dart';
+import 'package:flutter_week_1/screens/flutter_description_4/flutter_description_1.dart';
+import 'package:flutter_week_1/screens/flutter_four_screen/flutter_four_screen.dart';
 import 'package:flutter_week_1/screens/home_screen/home_screen.dart';
 import 'package:flutter_week_1/screens/isa_app_screen/isa_app_screen.dart';
 import 'package:flutter_week_1/screens/sample_flutter_apps_screen/sample_flutter_apps_screen.dart';
@@ -9,6 +11,8 @@ class SlidesBloc extends ChangeNotifier {
   List<String> slides = [
     HomeScreen.routeName,
     WhatIsFlutterScreen.routeName,
+    // FlutterFourScreen.routeName,
+    FlutterDescription1.routeName,
     SampleFlutterAppsScreen.routeName,
     IsaAppScreen.routeName,
     DogBreedsAppScreen.routeName

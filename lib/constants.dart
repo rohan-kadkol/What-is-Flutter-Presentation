@@ -21,3 +21,6 @@ const TextStyle kSubtitleStyle = TextStyle(
   fontSize: 50.0 * 2 / 3,
   fontFamily: 'GoogleSans',
 );
+
+const Curve kDefaultCurve = Curves.decelerate;
+const Duration kDefaultDuration = Duration(seconds: 2);
