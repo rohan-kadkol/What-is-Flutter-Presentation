@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_week_1/blocs/slides_bloc.dart';
+import 'package:flutter_week_1/screens/dog_breeds_app_screen/dog_breeds_app_screen.dart';
+import 'package:flutter_week_1/screens/isa_app_screen/isa_app_screen.dart';
 import 'package:flutter_week_1/screens/sample_flutter_apps_screen/sample_flutter_apps_screen.dart';
 import 'package:flutter_week_1/screens/what_is_flutter_screen/what_is_flutter_screen.dart';
 import 'package:provider/provider.dart';
@@ -42,7 +44,10 @@ class MyApp extends StatelessWidget {
           routes: {
             HomeScreen.routeName: (context) => HomeScreen(),
             WhatIsFlutterScreen.routeName: (context) => WhatIsFlutterScreen(),
-            SampleFlutterAppsScreen.routeName: (context) => SampleFlutterAppsScreen()
+            SampleFlutterAppsScreen.routeName: (context) =>
+                SampleFlutterAppsScreen(),
+            IsaAppScreen.routeName: (context) => IsaAppScreen(),
+            DogBreedsAppScreen.routeName: (context) => DogBreedsAppScreen()
           }),
     );
   }

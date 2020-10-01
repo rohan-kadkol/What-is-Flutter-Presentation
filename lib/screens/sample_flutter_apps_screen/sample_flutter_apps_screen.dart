@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_week_1/blocs/slides_bloc.dart';
 import 'package:flutter_week_1/screens/sample_flutter_apps_screen/components/phone_frame.dart';
 import 'package:flutter_week_1/widgets/default_screen.dart';
+import 'package:provider/provider.dart';
 
 class SampleFlutterAppsScreen extends StatelessWidget {
   static final String routeName = '/sample_flutter_apps';
@@ -8,6 +10,7 @@ class SampleFlutterAppsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultScreen(
+      onTap: () => Provider.of<SlidesBloc>(context, listen: false).nextSlide(context),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
