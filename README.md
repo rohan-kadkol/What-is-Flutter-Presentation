@@ -10,3 +10,4 @@ This is the presentation I used in the first session of Beginners' Guide to Flut
 <img src="assets/screenshot_1.png">
 <img src="assets/screenshot_2.png">
 <img src="assets/screenshot_3.png">
+<img src="assets/screenshot_4.png">
