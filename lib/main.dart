@@ -5,10 +5,12 @@ import 'package:flutter_week_1/screens/flutter_description_4/flutter_description
 import 'package:flutter_week_1/screens/flutter_four_screen/flutter_four_screen.dart';
 import 'package:flutter_week_1/screens/isa_app_screen/isa_app_screen.dart';
 import 'package:flutter_week_1/screens/sample_flutter_apps_screen/sample_flutter_apps_screen.dart';
+import 'package:flutter_week_1/screens/slide_1_screen/slide_1_screen.dart';
 import 'package:flutter_week_1/screens/what_is_flutter_screen/what_is_flutter_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'screens/home_screen/home_screen.dart';
+import 'screens/slide_2_screen/slide_2_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -51,7 +53,9 @@ class MyApp extends StatelessWidget {
           IsaAppScreen.routeName: (context) => IsaAppScreen(),
           DogBreedsAppScreen.routeName: (context) => DogBreedsAppScreen(),
           FlutterFourScreen.routeName: (context) => FlutterFourScreen(),
-          FlutterDescription1.routeName: (context) => FlutterDescription1()
+          FlutterDescription1.routeName: (context) => FlutterDescription1(),
+          Slide1Screen.routeName: (context)=>Slide1Screen(),
+          Slide2Screen.routeName: (context)=>Slide2Screen(),
         },
         // onGenerateRoute: (RouteSettings settings) {
         //   var routes = <String, WidgetBuilder>{
